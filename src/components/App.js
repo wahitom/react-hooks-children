@@ -2,12 +2,18 @@ import React from "react";
 import Container from "./Container";
 
 function App() {
+  const containerStyle = {
+    background: "blue",
+    fontSize: "30px",
+    fontStyle: "bold",
+  };
   return (
     <div className="App">
       <Container
         header="Example header"
         direction="horizontal"
         textPosition="right"
+        style={containerStyle}
       >
         <div>This is an example!</div>
         <div>This is an example!</div>

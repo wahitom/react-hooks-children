@@ -6,9 +6,10 @@ function Container({
   textPosition = "", // possible values: left, right, center
   direction = "horizontal", // possible values: vertical, horizontal
   contentPosition = "center", // possible values: left, right, center
+  style,
 }) {
   return (
-    <div className={`container ${textPosition}`}>
+    <div className={`container ${textPosition}`} style={style}>
       {header ? <h2>{header}</h2> : null}
 
       <div className={`container-children ${direction} ${contentPosition}`}>
